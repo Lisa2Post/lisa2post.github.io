@@ -1,0 +1,62 @@
+/*
+   New Perspectives on HTML
+   Tutorial 3
+   Case Problem 1
+
+   ICI Text and Color Styles
+   Author: Lisa Postnova
+   Date: 06/17/2025  
+
+   Filename:         c_styles.css
+   Supporting Files: none
+
+*/
+/* Set default body styles: black background, white text, Century Gothic font */
+body {
+   background-color: black; 
+   color: white; 
+   font-family: Century Gothic, sans-serif;
+}
+
+/* Style h1 headings inside header */
+header h1 {
+   color: yellow;                                  /* yellow text */
+   font-family: Courier New, Courier, monospace;   /* monospace font */
+   font-size: 28px;                                /* font size */
+   letter-spacing: 20px;                           /* kerning */
+   text-align: center;                             /* centered text */
+}
+
+/* Style h2 headings inside article */
+article h2 {
+   font-size: 24px;                                /* font size */
+   font-weight: normal;                            /* remove boldface */
+   letter-spacing: 5px;                            /* kerning */
+}
+
+/* Fully justify paragraph text inside article */
+article p {
+   text-align: justify;
+}
+
+/* Style for <strong> elements with class "keyword" */
+strong.keyword {
+   color: yellow;                                  /* yellow text */
+   font-weight: normal;                            /* non-bold font */
+}
+
+/* Center paragraphs inside footer */
+footer p {
+   text-align: center;                             
+}
+
+/* Remove borders from images with image maps */
+img[usemap] {
+   border: 0;                                
+}
+
+/* Float the cipher image to the right with some space */
+.floatRight {
+   float: right;
+   margin: 0 0 10px 15px;                          /* top 0, right 0, bottom 10px, left 15px */
+}
