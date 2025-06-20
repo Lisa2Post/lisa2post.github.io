@@ -1,0 +1,123 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Case Problem 1
+
+   History Style Sheet
+   Author: Lisa Postnova
+   Date: 06/20/2025  
+
+   Filename:         history.css
+   Supporting Files: 
+
+*/
+/* Display header, section, and nav elements as blocks */
+header, section, nav {
+   display: block;
+}
+
+/* Set default margin and padding for all elements to 0 pixels */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* Style rule for header background */
+header {
+   background-color: rgb(51, 51, 51);                    
+   text-align: center;                                   
+   /*max-width: 55em;  */                               /* fixed width - deleted due to the white spaces appeared on both sides of header*/
+   width: 100%;                                         /* added responsiveness to avoid white spaces on a screen*/
+   margin: 0 auto;                                      /* center header horizontally */
+}
+
+/* Set image height inside header */
+header img {
+   height: 4em;  
+}
+
+/* Style the navigation */
+nav {
+   float: left;                                         /* float to left margin */
+   width: 15em;
+   background-color: rgb(51, 51, 51);
+}
+
+/* Style navigation list items */
+nav li {
+   font-family: "Century Gothic", sans-serif;          /* typeface */
+   font-size: 0.7em;                                    
+   list-style-type: none;                              /* remove bullet markers */
+   line-height: 1.4em;                                  
+   margin-left: 1em;                                    
+   margin-bottom: 1.2em;                                
+}
+
+/* Style navigation links */ 
+nav a {
+   color: rgb(212, 212, 212);
+   text-decoration: none;                              /* no underlining for links */
+}
+
+/* Change link color on hover */
+
+nav a:hover {
+   color: white;
+}
+
+/* Style speech section */ 
+section#speech {
+   background-color: rgb(212, 212, 212);
+   /*width: 40em; */
+   width: calc(100% - 15em);                            /* added responsiveness to avoid white spaces on a screen*/
+   float: left; 
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   overflow: hidden;                                    /* added to improve visual appearence, so section is not currapted with white spaces */
+}
+
+/* Style h1 heading inside speech section */ 
+section#speech h1 {
+   background-color: rgb(51, 51, 51);
+   color: rgb(212, 212, 212); 
+   font-size: 2em; 
+   text-align: center;
+}
+
+/* Style paragraphs inside speech section */
+section#speech p {
+   font-size: 0.9em; 
+   margin: 1em;
+}
+
+/* Drop-cap effect for the first letter of the first paragraph in speech section */
+section#speech p:first-of-type::first-letter {
+   float: left;                                        /* float letter to the left */
+   font-size: 4em;
+   line-height: 0.8em;
+   margin-right: 0.3em;
+   padding-right: 0.2em;
+   padding-bottom: 0.2em;
+   border-right: 0.02em solid black;
+   border-bottom: 0.02em solid black;
+}
+
+/* Display the first line of the first paragraph in speech section uppercase */
+section#speech p:first-of-type::first-line {
+   text-transform: uppercase;
+}
+
+/* Stack Lincoln images with irregular wrapping */
+section#speech img {
+   float: right;                                      /* float right when margin is clear */
+   clear: right;                                      /* ensure stacking happens vertically */
+   height: 4em; 
+}
+
+
+
+
+
+
+
+
+
