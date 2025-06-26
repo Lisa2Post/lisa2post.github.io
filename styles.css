@@ -30,6 +30,45 @@ th {
 	background-color: #a5d6a7;
 	color: #004d40;
 }
+
+#examTable {
+        background-color: #fffde7;
+        border: 2px solid #fbc02d;
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 20px; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 8px; 
+	overflow: hidden;
+}
+	 
+#examTable th {
+	background-color: #fff176;
+        color: #3e2723;
+        padding: 12px;
+	border: 1px solid #fbc02d;
+} 
+	 
+#examTable td {
+	background-color: #fffde7;
+	color: #5d4037;
+        padding: 12px;
+        border: 1px solid #fbc02d;
+}
+
+#examTable td:nth-child(n+2) {
+	text-align: center;
+}
+
+/* Alternate row coloring */
+#examTable tr:nth-child(even) td {
+	background-color: #fff9c4;
+}
+
+/* hover effect */
+#examTable tr:hover td {
+	background-color: #e8f5e9;
+}
 	 
 a {
 	color: #0066cc;
