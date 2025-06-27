@@ -1,0 +1,94 @@
+body {
+   background-color: #FFF8F0;
+   margin: 20px;
+}
+
+form {
+   width: 700px;
+   max-width: 100%;
+   margin: 0 auto;
+   background-color: #FFF3E0;
+   color: #333333;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form img {
+   display: block;
+   margin: 0 auto 20px;
+   width: 100%;
+}
+
+table {
+   width: 100%;
+   border-spacing: 10px;
+}
+
+td {
+   vertical-align: middle;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="file"], 
+select, 
+textarea {
+   width: 100%;
+   max-width: 500px;
+   padding: 8px;
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   box-sizing: border-box;
+   appearance: none; 
+   -webkit-appearance: none;
+   -moz-appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+   border-color: #F37021;
+   outline: none;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea:hover, 
+select:hover {
+   border-color: #C8102E;
+}
+
+input[type="submit"] {
+   display: block;
+   margin: 20px auto;
+   width: 500px;
+   height: 40px;
+   font-size: 16px;
+   background-color: #C8102E;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #F37021;
+}
+
+.inline-options {
+   display: flex;
+   gap: 15px;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+form,
+form label, 
+form input, 
+form select, 
+form textarea {
+   font-family: "Century Gothic", sans-serif;
+   font-size: 16px;
+}

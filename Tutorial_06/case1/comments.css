@@ -1,0 +1,99 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 1
+
+   Comment Form Style Sheet
+   Author: Lisa Postnova
+   Date: 06/26/2025  
+
+   Filename:         comments.css
+   Supporting Files: go.png, stop.png
+
+*/
+
+fieldset {
+   background-color: rgb(245, 245, 255); 
+   margin: 15px auto;                     /* 15px top and bottom margin, auto for left and right centering */
+   padding: 5px; 
+   width: 90%; 
+   border: 1px solid #ccc; 
+   border-radius: 5px; 
+}
+
+label {
+   display: block; 
+   float: left;                           /* float labels to the left */
+   font-size: 0.9em; 
+   width: 100%; 
+   margin-top: 5px; 
+   margin-bottom: 5px; 
+   clear: left;                           /* make sure the labels don't overlap with floated elements */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+   display: block; 
+   float: right;                          /* float inputs and text areas to the right */
+   font-size: 0.9em; 
+   width: 55%; 
+   margin-left: 10px; 
+   margin-right: 10px; 
+   height: 40px; 
+   box-sizing: border-box;
+}
+
+textarea {
+   height: 150px; 
+   resize: none; 
+   margin: 10px;
+   padding: 8px;
+}
+
+input[type="submit"] {
+   display: block; 
+   margin: 20px auto 10px auto;            /* centers horizontally with top and bottom margins */
+   width: 200px; 
+   height: 30px; 
+   font-size: 1em; 
+   background-color: #4CAF50; 
+   color: white; 
+   border: none; 
+   border-radius: 5px; 
+   cursor: pointer; 
+   clear: both; 
+}
+
+input[type="submit"]:hover {
+   background-color: #45a049; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+   background-color: rgb(225, 225, 240); 
+   outline: none; 
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid {
+   background-color: rgb(225, 240, 225); 
+   background-image: url('go.png'); 
+   background-repeat: no-repeat; 
+   background-position: bottom right;          /* place image at the bottom-right corner */
+   background-size: contain;                   /* resize the background image to fit inside the input box */
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="password"]:invalid {
+   background-color: rgb(240, 225, 225); 
+   background-image: url('stop.png'); 
+   background-repeat: no-repeat; 
+   background-position: bottom right; 
+   background-size: contain; 
+}
