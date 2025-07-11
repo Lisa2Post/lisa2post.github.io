@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>My Printable Page</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+   <header>
+      <div class="banner-wrapper">
+         <img src="banner.jpg" alt="Cooking Banner" class="banner-img" />
+         <div class="banner-text">
+            <h1>Delicious and Healthy Cooking</h1>
+            <nav>
+               <a href="#">Home</a>
+               <a href="#">About</a>
+               <a href="#">Contact</a>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <section>
+         <h2>Other Content</h2>
+         <p>This is some general content that will not be printed.</p>
+      </section>
+
+      <!-- printable part -->
+      <section id="printThis">
+         <h2>Chocolate Cake Recipe</h2>
+         <div class="recipe-layout">
+            <img src="chocolate-cake.jpg" alt="Chocolate Cake" />
+            <div class="recipe-content">
+               <p>This classic chocolate cake is rich, moist, and perfect for celebrations!</p>
+               <ul>
+                  <li>1 and 3/4 cups all-purpose flour</li>
+                  <li>3/4 cup unsweetened cocoa powder</li>
+                  <li>2 cups sugar</li>
+                  <li>1 and 1/2 tsp baking soda</li>
+                  <li>1 and 1/2 tsp baking powder</li>
+                  <li>2 eggs</li>
+                  <li>1 cup buttermilk</li>
+                  <li>1/2 cup vegetable oil</li>
+                  <li>2 tsp vanilla extract</li>
+                  <li>1 cup hot water</li>
+               </ul>
+               <ol>
+                  <li>Preheat oven to 350°F (175°C). Grease and flour two 9-inch round pans.</li>
+                  <li>In a large bowl, combine dry ingredients.</li>
+                  <li>Add eggs, buttermilk, oil, and vanilla. Mix well.</li>
+                  <li>Stir in hot water until batter is smooth (it will be thin).</li>
+                  <li>Pour into pans and bake for 30–35 minutes or until a toothpick comes out clean.</li>
+                  <li>Cool for 10 minutes in the pan, then remove to cool completely on a wire rack.</li>
+               </ol>
+            </div>
+         </div>
+      </section>
+      <button onclick="window.print()">Print Recipe</button>
+   </main>
+
+   <footer>
+      <p>Copyright © 2025 Lisa Postnova. All rights reserved.</p>
+   </footer>
+
+</body>
+</html>

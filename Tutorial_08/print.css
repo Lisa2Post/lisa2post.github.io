@@ -1,0 +1,53 @@
+body {
+   background: white;
+   color: black;
+   font-family: Georgia, serif;
+   margin: 1in;
+}
+
+header,
+footer,
+main > section:not(#printThis),
+button, 
+img[src="banner.jpg"] {
+   display: none;
+}
+
+/* Make sure the recipe section prints properly */
+#printThis {
+   display: block;
+}
+
+#printTis img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+}
+
+#printThis h2 {
+   font-size: 150%;
+   margin-top: 0;
+}
+
+#printThis ul,
+#printThis ol {
+   margin-left: 1em;
+}
+
+/* layout and content side by side in print */
+.recipe-layout {
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+}
+
+.recipe-layout img {
+   width: 100px;
+   height: auto;
+   border-radius: 8px;
+}
+
+.recipe-content {
+   flex: 1;
+}
