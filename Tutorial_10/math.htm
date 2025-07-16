@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Numbers</title>
+   <link href="mathstyles.css" rel="stylesheet" type="text/css" />
+   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div>
+      <h1>Numbers Comparison</h1>
+      <input type="number" id="num1" placeholder="Enter first number" />
+      <br />
+      <input type="number" id="num2" placeholder="Enter second number" />
+      <br />
+      <button onclick="compareNumbers()">Compare</button>
+
+      <div class="result" id="output"></div>
+   </div>
+   
+   <script>
+      function compareNumbers() {
+         let x = parseFloat(document.getElementById("num1").value);
+         let y = parseFloat(document.getElementById("num2").value);
+
+         if (isNaN(x) || isNaN(y)) {
+            document.getElementById("output").innerHTML = "<p>Please enter valid numbers.</p>";
+            return;
+         }
+
+         let sum = x + y;
+         let product = x * y;
+         let comparison = "";
+
+         if (x > y) {
+            comparison = x + " > " + y;
+         } else if (x < y){
+            comparison = x + " < " + y;
+         } else {
+            comparison = x + " = " + y;
+         }
+
+         document.getElementById("output").innerHTML = `
+            <p>${x} + ${y} = ${sum}</p>
+            <p>${x} * ${y} = ${product}</p>
+            <p>${comparison}</p>
+         `;
+      }
+
+   </script>
+</body>
+</html>

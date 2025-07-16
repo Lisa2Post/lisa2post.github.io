@@ -1,0 +1,45 @@
+body {
+   background-image: url('math-background.jpg');
+   background-size: cover;
+   background-position: center;
+   font-family: 'Source Serif 4', Cambria, sans-serif;
+   text-align: center;
+   color: white;
+   margin: 40px;
+   padding: 50px;
+}
+
+.container {
+   background-color: rgba(0, 0, 0, 0.6);
+   padding: 30px;
+   border-radius: 12px;
+   max-width: 400px;
+   margin: auto;
+}
+
+input[type="number"] {
+   width: 20%;
+   padding: 10px;
+   font-size: 1em;
+   margin: 10px 0;
+   border-radius: 6px;
+   border: none;
+}
+
+button {
+   width: 21%;
+   padding: 10px 20px;
+   font-size: 1em;
+   border: none;
+   border-radius: 6px;
+   background-color: #228B22;
+   color: white;
+   cursor: pointer;
+}
+
+.result {
+   margin-top: 20px;
+   font-size: 1.2em;
+   min-height: 100px;
+   font-weight: bold;
+}
